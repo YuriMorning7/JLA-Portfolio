@@ -1337,9 +1337,30 @@ textarea.form-input::-webkit-resizer { display: none; }
 
   .sidebar-info { gap: 25px; }
 
-  .avatar-box { border-radius: 30px; }
+  .avatar-box {
+    overflow: hidden;
+  }
+  
 
-  .avatar-box img { width: 120px; }
+  .avatar-box img {
+    width: 140px;
+    height: 140px;
+    object-fit: cover;
+    border-radius: 0; 
+  }
+  
+
+  @media (min-width: 916px) {
+    .avatar-box {
+      border-radius: 50%; 
+    }
+  
+    .avatar-box img {
+      width: 140px;
+      height: 140px;
+    }
+  }
+  
 
   .info-content .name { margin-bottom: 15px; }
 
