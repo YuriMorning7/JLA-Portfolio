@@ -1602,12 +1602,27 @@ textarea.form-input::-webkit-resizer { display: none; }
    * #PORTFOLIO, BLOG
    */
 
-  .project-img, .blog-banner-box { border-radius: 16px; }
+.blog-category {
+  color: #00bfa6; /* AWS green or tech teal */
+  font-weight: 600;
+}
 
-  .blog-posts-list { gap: 30px; }
+.blog-item-title {
+  color: #cfcfcf;
+}
 
-  .blog-content { padding: 25px; }
+.blog-text {
+  color: #4b5563;
+}
 
+.blog-banner-box img {
+  object-fit: cover;
+  transition: transform 0.3s ease;
+}
+
+.blog-banner-box img:hover {
+  transform: scale(1.03);
+}
 
 
   /**
