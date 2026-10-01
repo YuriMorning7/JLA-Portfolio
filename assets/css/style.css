@@ -716,7 +716,6 @@ main {
 
 .clients-list {
   display: flex;
-  justify-content: center;
   align-items: center;
   gap: 25px;
   padding: 20px;
@@ -736,6 +735,11 @@ main {
   scroll-snap-align: start;
   transition: transform 0.3s ease, box-shadow 0.3s ease;
 }
+
+/* center the row when it fits; unlike justify-content: center, auto margins
+   collapse to 0 on overflow so the first logo stays scrollable */
+.clients-item:first-child { margin-left: auto; }
+.clients-item:last-child { margin-right: auto; }
 
 .clients-item img {
   width: 100%;
